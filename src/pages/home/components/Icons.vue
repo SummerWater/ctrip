@@ -25,50 +25,11 @@ export default {
         pagination: {
           el: '.swiper-pagination'
         }
-      },
-      iconList: [
-        {
-          title: '景点门票',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-        },
-        {
-          title: '一日游',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png'
-        },
-        {
-          title: '本地玩乐',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/f5/a963333e1fa802.png'
-        },
-        {
-          title: '动植物园',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png'
-        },
-        {
-          title: '必游榜单',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png'
-        },
-        {
-          title: '自然风光',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png'
-        },
-        {
-          title: '海滨海岛',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/27/dac2bcf9added702.png'
-        },
-        {
-          title: '踏青赏花',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png'
-        },
-        {
-          title: '城市观光',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png'
-        },
-        {
-          title: '全部玩乐',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png'
-        }
-      ]
+      }
     }
+  },
+  props: {
+    iconList: Array
   },
   computed: {
     list () {

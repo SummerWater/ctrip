@@ -22,66 +22,9 @@
 <script>
 export default {
   name: 'HomeHot',
-  data () {
-    return {
-      hotList: [
-        {
-          title: '大连森林动物园',
-          price: '￥58',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_150x150_88ed4437.jpg'
-        },
-        {
-          title: '大连圣亚海洋世界',
-          price: '￥25',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_150x150_2c4b6f2f.jpg'
-        },
-        {
-          title: '老虎滩海洋公园',
-          price: '￥50',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1602/39/39f6b1003abe1b2790.img.jpg_150x150_a9877501.jpg'
-        },
-        {
-          title: '旅顺203樱花园',
-          price: '￥218',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/a2/a2a3dd4f0bf42f4da3.img.jpg_150x150_e9128a33.jpg'
-        },
-        {
-          title: '海昌发现王国',
-          price: '￥60',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1703/94/944fc059260bd728a3.water.jpg_150x150_f3152ca6.jpg'
-        },
-        {
-          title: '大连森林动物园',
-          price: '￥58',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_150x150_88ed4437.jpg'
-        },
-        {
-          title: '大连圣亚海洋世界',
-          price: '￥25',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_150x150_2c4b6f2f.jpg'
-        },
-        {
-          title: '老虎滩海洋公园',
-          price: '￥50',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1602/39/39f6b1003abe1b2790.img.jpg_150x150_a9877501.jpg'
-        },
-        {
-          title: '旅顺203樱花园',
-          price: '￥218',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/a2/a2a3dd4f0bf42f4da3.img.jpg_150x150_e9128a33.jpg'
-        },
-        {
-          title: '海昌发现王国',
-          price: '￥60',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1703/94/944fc059260bd728a3.water.jpg_150x150_f3152ca6.jpg'
-        }
-      ],
-      topIcon: [
-        'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        'http://img1.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png',
-        'http://img1.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png'
-      ]
-    }
+  props: {
+    hotList: Array,
+    topIcon: Array
   }
 }
 </script>
