@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'CityHeader'
+  name: 'CityHeaderTab'
 }
 </script>
 
