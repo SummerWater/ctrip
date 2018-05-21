@@ -5,16 +5,16 @@
       <span class="more">全部榜单></span>
     </div>
     <ul class="hot-wrapper">
-      <li class="hot-item" v-for="(item, index) in hotList" :key="index" :ref="'hot_' + index">
-        <span class="top" v-if="index >= 0 && index < 3">
-          <img :src="topIcon[index]" class="top-img" />
-        </span>
+      <router-link tag="li" :to="'/detail/' + index" class="hot-item" v-for="(item, index) in hotList" :key="index" :ref="'hot_' + index">
+      <span class="top" v-if="index >= 0 && index < 3">
+        <img :src="topIcon[index]" class="top-img" />
+      </span>
         <img :src="item.imgUrl" class="hot-img">
         <p class="title">{{item.title}}</p>
         <p class="price">
           <span class="orange">{{item.price}}</span>起
         </p>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
