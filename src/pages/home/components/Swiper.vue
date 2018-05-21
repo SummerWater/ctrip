@@ -18,7 +18,6 @@ export default {
   data () {
     return {
       swiperOption: {
-        loop: true,
         pagination: {
           el: '.swiper-pagination'
         },

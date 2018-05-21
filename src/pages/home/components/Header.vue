@@ -32,10 +32,11 @@ export default {
     background-color $bgColor
     color #fff
     .header-left
-      width .80rem
+      width .88rem
       text-align center
       .back-icon
-        font-size .44rem
+        font-size .34rem
+        font-weight bold
     .header-search
       flex 1
       width 100%
