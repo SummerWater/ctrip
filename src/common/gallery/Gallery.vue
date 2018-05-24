@@ -1,7 +1,7 @@
 <template>
   <div class="container" @click="handleGalleryClick">
     <div class="wrapper">
-      <swiper :options="swiperOptions">
+      <swiper :options="swiperOptions" ref="mySwiper">
         <!-- slides -->
         <swiper-slide v-for="(item, index) of imgs" :key="index">
           <img class="gallery-img" :src="item">
@@ -31,7 +31,18 @@ export default {
     }
   },
   props: {
-    imgs: Array
+    imgs: Array,
+    currentImg: Number
+  },
+  computed: {
+    swiper () {
+      return this.$refs.mySwiper.swiper
+    }
+  },
+  watch: {
+    currentImg () {
+      this.swiper.slideTo(this.currentImg, 0, false)
+    }
   },
   methods: {
     handleGalleryClick () {

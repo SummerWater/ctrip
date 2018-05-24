@@ -1,10 +1,10 @@
 <template>
   <div class="list">
     <div class="item" v-for="(item, index) in imgList" :key="index">
-      <img :src="item" @click="galleryShow = true">
+      <img :src="item" @click="handleListClick(index)">
     </div>
     <fade>
-      <Gallery :imgs="imgList" v-show="galleryShow" @close="galleryShow = false"></Gallery>
+      <Gallery :currentImg="currentImg" :imgs="imgList" v-show="galleryShow" @close="galleryShow = false"></Gallery>
     </fade>
   </div>
 </template>
@@ -34,12 +34,19 @@ export default {
         'http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_350x240_b09a9503.jpg',
         'http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_350x240_cf4cd08e.png'
       ],
-      galleryShow: false
+      galleryShow: false,
+      currentImg: 0
     }
   },
   components: {
     Gallery,
     Fade
+  },
+  methods: {
+    handleListClick: function (index) {
+      this.galleryShow = true
+      this.currentImg = index
+    }
   }
 }
 </script>
