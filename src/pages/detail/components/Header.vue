@@ -96,6 +96,7 @@ export default {
         background: linear-gradient(top, transparent, #000);
         z-index 1
       .img-number
+        font-size .24rem
         display inline-block
         padding 0 .26rem
         border-radius .1rem
