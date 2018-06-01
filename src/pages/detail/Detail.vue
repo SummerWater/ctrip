@@ -4,6 +4,7 @@
     <detail-base-info></detail-base-info>
     <detail-notice></detail-notice>
     <detail-recommend></detail-recommend>
+    <detail-ticket-nav></detail-ticket-nav>
     <div class="content"></div>
   </div>
 </template>
@@ -13,6 +14,7 @@ import DetailHeader from './components/Header'
 import DetailBaseInfo from './components/BaseInfo'
 import DetailNotice from './components/Notice'
 import DetailRecommend from './components/Recommend'
+import DetailTicketNav from './components/TicketNav'
 
 export default {
   name: 'Detail',
@@ -20,7 +22,8 @@ export default {
     DetailHeader,
     DetailBaseInfo,
     DetailNotice,
-    DetailRecommend
+    DetailRecommend,
+    DetailTicketNav
   }
 }
 </script>
